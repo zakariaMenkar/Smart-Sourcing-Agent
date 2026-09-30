@@ -1,0 +1,133 @@
+.request-page {
+  padding: 40px;
+  background: #e9ecf3;
+  min-height: calc(100vh - 90px);
+}
+
+.request-card {
+  background: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.request-card input,
+.request-card select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary.full {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 8px solid #e2e8f0;
+  border-top: 8px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+
+
+
+.rfi-section {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.rfi-header {
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.rfi-textarea {
+  width: 90%;
+  min-height: 150px;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.supplier-section {
+  margin-top: 25px;
+}
+
+.supplier-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.supplier-card input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+
+
+
+
+.results-card {
+  max-width: 1200px;
+}
+
+.supplier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.scroll-box {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* compact cards */
+.supplier-card.compact {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.supplier-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.supplier-info p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

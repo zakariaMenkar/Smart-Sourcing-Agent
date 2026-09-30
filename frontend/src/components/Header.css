@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background: white;
+  border-bottom: 3px solid #e53935;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 42px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2a44;
+}
+
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f2a44;
+  padding-bottom: 6px;
+}
+
+.nav a:hover {
+  color: #e53935;
+}
+
+.nav a.active {
+  color: #e53935;
+  border-bottom: 3px solid #e53935;
+}
